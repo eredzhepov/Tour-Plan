@@ -366,12 +366,15 @@ body .container {
 
 .header-top {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 40px;
@@ -380,11 +383,13 @@ body .container {
 
 .search {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   overflow: hidden;
-  border-radius: 6px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
   height: 40px;
 }
 
@@ -400,6 +405,26 @@ body .container {
   line-height: 15px;
 }
 
+.search__input::-webkit-input-placeholder {
+  color: #333333;
+}
+
+.search__input::-moz-placeholder {
+  color: #333333;
+}
+
+.search__input:-ms-input-placeholder {
+  color: #333333;
+}
+
+.search__input::-ms-input-placeholder {
+  color: #333333;
+}
+
+.search__input::placeholder {
+  color: #333333;
+}
+
 .search__button {
   position: absolute;
   top: 0;
@@ -412,9 +437,11 @@ body .container {
 
 .user {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
@@ -423,7 +450,8 @@ body .container {
 .user__avatar {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -434,4 +462,3 @@ body .container {
   margin-left: 18px;
   color: #333333;
 }
-/*# sourceMappingURL=style.css.map */
