@@ -18,18 +18,25 @@
       &__link
         font-size: 12px
         line-height: 15px
-        margin-left: auto
   .search
     &__input
       width: 340px
 s
 @media screen and  (max-width: 768px)
   .container
-    max-width: 576px
+    //max-width: 576px
+    max-width: 700px
     width: 92%
   .navbar
     &-top
-      padding: 41px 7px
+      padding: 41px 0
+
+@media screen and  (max-width: 576px)
+  .logo
+    width: 99px
+  .navbar
+    &-top
+      padding: 29px 7px
     &__search, &-menu, &__user
       display: none
   .menu
@@ -47,11 +54,3 @@ s
         width: 16px
         height: 1px
         background-color: $text-color
-
-@media screen and  (max-width: 576px)
-  .logo
-    width: 99px
-  .navbar
-    &-top
-      padding-top: 29px
-      padding-bottom: 29px
