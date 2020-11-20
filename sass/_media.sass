@@ -34,11 +34,14 @@ s
       padding: 22px 14px
 
 @media screen and  (max-width: 576px)
+  .container
+    padding-left: 7px
+    padding-right: 7px
   .logo
     width: 99px
   .navbar
     &-top
-      padding: 29px 7px
+      padding: 29px 0px
     &__search, &-menu, &__user
       display: none
   .menu
@@ -56,3 +59,24 @@ s
         width: 16px
         height: 1px
         background-color: $text-color
+  .stars
+    flex-basis: 25%
+
+  .hotel
+    padding-top: 0
+    &-info
+      &__rating
+        display: none
+      &__text
+        width: 100%
+      &__name
+        margin-top: 10px
+        margin-bottom: 0
+      &__offer
+        order: -1
+        margin-left: 0
+    &-name
+      flex-basis: 100%
+
+    &-wraper
+      justify-content: space-between
