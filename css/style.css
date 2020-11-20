@@ -348,6 +348,10 @@ template {
 
 body {
   font-family: 'Mulish', sans-serif;
+  background-color: #F5FAFE;
+  -webkit-columns: #333333;
+     -moz-columns: #333333;
+          columns: #333333;
 }
 
 button {
@@ -508,6 +512,31 @@ img {
   line-height: 18px;
   margin-left: 18px;
   color: #333333;
+}
+
+.breadcrumb-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 18px 0;
+  margin: 0;
+}
+
+.breadcrumb-list__item {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.breadcrumb-list__item:not(:last-child)::after {
+  content: '/';
+  margin-right: 4px;
+}
+
+.breadcrumb-list__link {
+  color: inherit;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1200px) {
