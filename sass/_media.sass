@@ -15,6 +15,8 @@
     &-menu
       padding-top: 22px
       padding-bottom: 22px
+      max-width: 673px
+      margin: auto
       &__link
         font-size: 12px
         line-height: 15px
@@ -22,25 +24,17 @@
     &__input
       width: 340px
 s
-@media screen and  (max-width: 768px)
-  .container
-    //max-width: 576px
-    max-width: 700px
-    width: 92%
-  .navbar
-    &-top
-      padding: 30px 0
-    &-menu
-      padding: 23px 14px
 
-@media screen and  (max-width: 576px)
+@media screen and  (max-width: 767px)
+  .container
+    width: 92%
 
   .logo
     width: 99px
   .navbar
     &-top
       padding: 29px 0px
-      max-width: 280px
+
     &__search, &-menu, &__user
       display: none
   .menu
@@ -68,7 +62,6 @@ s
         display: none
       &__text
         width: 100%
-        max-width: 269px
       &__name
         margin-top: 10px
         margin-bottom: 0
@@ -80,3 +73,20 @@ s
 
     &-wraper
       justify-content: space-between
+
+@media screen and  (max-width: 576px)
+  .container
+    width: 92%
+  .hotel
+    width: 92%
+    &-info
+      &__description
+        margin: 0
+    &-wraper
+      &__stars
+        margin-right: 5px
+        margin-top: 5px
+  .navbar-top
+    &__menu-button
+      margin-right: 13px
+      margin-top: 4px
