@@ -1,8 +1,3 @@
-document.addEventListener('keydown', function(e) {
-    if (e.keyCode===37 ) {
-           console.log('влево');
-    }
-});
 var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
   
