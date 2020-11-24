@@ -1,6 +1,14 @@
 @media screen and  (max-width: 1200px)
   .container
     max-width: 960px
+    .slider
+      width: 590px
+    .swiper
+      &-slide
+        &__image
+          width: 100%
+          height: 100%
+          object-fit: cover
 @media screen and  (max-width: 992px)
   .container
     max-width: 700px
@@ -12,6 +20,13 @@
       padding-bottom: 30px
     &__search
       margin-left: auto
+  .slider
+    min-width: 100%
+  .hotel
+    &-grid
+      flex-direction: column
+    &__slider
+      margin-bottom: 30px
     &-menu
       padding-top: 22px
       padding-bottom: 22px
@@ -20,6 +35,14 @@
       &__link
         font-size: 12px
         line-height: 15px
+    &-right
+      flex-direction: row
+      margin: 0
+  .booking
+    width: 340px
+    padding: 29px 22px 26px 23px
+  .map
+    width: 340px
   .search
     &__input
       width: 340px
@@ -31,6 +54,7 @@ s
 
   .logo
     width: 99px
+    margin-left: 10px
   .navbar
     &-top
       padding: 29px 0px
@@ -57,6 +81,7 @@ s
 
   .hotel
     padding-top: 0
+    margin: auto
     &-info
       &__rating
         display: none
@@ -70,23 +95,50 @@ s
         margin-left: 0
     &-name
       flex-basis: 100%
+    &-right
+      flex-direction: column
+      min-height: 450px
 
     &-wraper
       justify-content: space-between
-
+  .slider
+    max-width: 100%
+    height: 350px
+  .booking
+    width: 100%
+  .map
+    width: 100%
 @media screen and  (max-width: 576px)
-  .container
-    width: 92%
+  // .container
+  //   min-width: 92%
   .hotel
-    width: 92%
+    width: 93%
     &-info
       &__description
         margin: 0
     &-wraper
       &__stars
-        margin-right: 5px
+        margin-right: 10px
         margin-top: 5px
+    &__slider
+      margin-top: 23px
+      margin-bottom: 21px
+
   .navbar-top
     &__menu-button
-      margin-right: 13px
-      margin-top: 4px
+      margin-right: 4px
+      margin-top: 6px
+  // .swiper-container
+
+  //   max-width: 92%
+  // .hotel
+  //   &__slider
+  //     margin-bottom: 20px
+@media screen and  (max-width: 320px)
+  .hotel
+    &-grid
+      width: 278px
+  .slider
+    height: 179px
+  .breadcrumb-list
+    margin-left: 10px
