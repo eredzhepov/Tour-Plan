@@ -1251,6 +1251,14 @@ img {
   line-height: 20px;
 }
 
+.card__title--first {
+  width: 156px;
+}
+
+.card__title--second {
+  width: 162px;
+}
+
 .card__button {
   font-weight: 600;
   font-size: 12px;
@@ -1670,5 +1678,16 @@ img {
   .map {
     width: 280px;
     height: 172px;
+  }
+  .reviews {
+    width: 93%;
+    margin: auto;
+  }
+  .reviews-slider__item {
+    padding: 0px 28px 30px 32px;
+  }
+  .activities {
+    width: 93%;
+    margin: auto;
   }
 }
