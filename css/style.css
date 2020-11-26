@@ -1031,7 +1031,11 @@ img {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
+<<<<<<< HEAD
   margin-bottom: 62px;
+=======
+  margin-bottom: 70px;
+>>>>>>> 3bfb70c927b8d787d9f1ac6bc89a877cf9be3ce9
 }
 
 .reviews-slider__item {
@@ -1050,7 +1054,11 @@ img {
           align-items: center;
   position: relative;
   max-width: 730px;
+<<<<<<< HEAD
   margin: 53px auto 0;
+=======
+  margin: 45px auto 0;
+>>>>>>> 3bfb70c927b8d787d9f1ac6bc89a877cf9be3ce9
   background-color: #fff;
   -webkit-border-radius: 8px;
           border-radius: 8px;
@@ -1165,6 +1173,7 @@ img {
   color: #0A223D;
   max-width: 537px;
   margin: auto;
+<<<<<<< HEAD
   max-height: 115px;
   overflow-y: auto;
 }
@@ -1269,6 +1278,8 @@ img {
   border: none;
   -webkit-border-radius: 4px;
           border-radius: 4px;
+=======
+>>>>>>> 3bfb70c927b8d787d9f1ac6bc89a877cf9be3ce9
 }
 
 @media screen and (max-width: 1200px) {
@@ -1381,6 +1392,7 @@ img {
     font-size: 30px;
     line-height: 38px;
     margin-top: 33px;
+<<<<<<< HEAD
     margin-bottom: 45px;
   }
   .activities {
@@ -1410,6 +1422,9 @@ img {
   }
   .card__title--third {
     width: 200px;
+=======
+    margin-bottom: 55px;
+>>>>>>> 3bfb70c927b8d787d9f1ac6bc89a877cf9be3ce9
   }
 }
 
@@ -1494,7 +1509,11 @@ img {
     display: none;
   }
   .reviews-slider__button {
+<<<<<<< HEAD
     top: 50px;
+=======
+    top: 45px;
+>>>>>>> 3bfb70c927b8d787d9f1ac6bc89a877cf9be3ce9
   }
   .reviews-slider__button--prev {
     left: 50%;
@@ -1601,6 +1620,7 @@ img {
   .subscribe {
     width: 95%;
   }
+<<<<<<< HEAD
   .subscribe__button {
     font-size: 12px;
     line-height: 15px;
@@ -1608,6 +1628,8 @@ img {
   .subscribe__input {
     padding-left: 21px;
   }
+=======
+>>>>>>> 3bfb70c927b8d787d9f1ac6bc89a877cf9be3ce9
   .newsletter-title {
     font-size: 20px;
     line-height: 25px;
@@ -1624,7 +1646,11 @@ img {
     font-size: 18px;
     line-height: 23px;
     max-width: 84%;
+<<<<<<< HEAD
     margin: 27px auto 36px;
+=======
+    margin: 30px auto 44px;
+>>>>>>> 3bfb70c927b8d787d9f1ac6bc89a877cf9be3ce9
   }
   .reviews-slider__item {
     padding: 0px 39px 30px 42px;
@@ -1634,6 +1660,7 @@ img {
   }
   .reviews-slider__button--prev {
     left: 44%;
+<<<<<<< HEAD
   }
   .reviews-slider__text {
     max-height: 266px;
@@ -1641,6 +1668,8 @@ img {
   }
   .card {
     width: 100%;
+=======
+>>>>>>> 3bfb70c927b8d787d9f1ac6bc89a877cf9be3ce9
   }
   .activities {
     padding-top: 27px;
