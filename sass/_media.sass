@@ -12,6 +12,9 @@
   .card
     width: 230px
     height: 230px
+  .footer
+    &__input
+      flex-basis: 100%
 @media screen and  (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -76,10 +79,9 @@
       font-size: 30px
       line-height: 38px
       margin-top: 33px
-<<<<<<< HEAD
       margin-bottom: 45px
   .activities
-    padding-top: 63px
+    padding: 63px 0 48px 0
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -96,10 +98,54 @@
         width: 180px
       &--third
         width: 200px
-=======
-      margin-bottom: 55px
->>>>>>> 3bfb70c927b8d787d9f1ac6bc89a877cf9be3ce9
-
+  .footer
+    padding-top: 72px
+    &-wrapper
+      grid-template-columns: 105px 82px 314px 40px
+      grid-column-gap: 0
+      grid-row-gap: 47px
+    &__title
+      &--mb-3
+        margin-top: -8px
+      &--mb-4
+        margin-top: 19px
+        margin-bottom: 26px
+    &__input
+      flex-basis: 47%
+    &__logo
+      grid-row: 1 / 2
+      width: 104px
+      height: 112px
+    &__icon
+      &-wrapper
+        text-align: center
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column-start: 3
+        align-self: center
+        margin-top: 10px
+    &__additional
+      grid-column-start: 3
+      justify-content: center
+      margin-left: 16px
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__contact
+      &-detalies
+        grid-row: 3
+        grid-column: span 5
+      &-form
+        grid-column: span 4
+        grid-row: 4
+    &__condition
+      margin-top: 8px
+      grid-column-start: span 5
+      &-cards
+        margin-left: auto
 @media screen and  (max-width: 767px)
   .container
     width: 92%
@@ -154,11 +200,7 @@
         &:after, &:before
           display: none
       &__button
-<<<<<<< HEAD
         top: 50px
-=======
-        top: 45px
->>>>>>> 3bfb70c927b8d787d9f1ac6bc89a877cf9be3ce9
         &--prev
           left: 50%
           margin-left: -85px
@@ -187,6 +229,15 @@
   .card
     width: 49%
     height: 255px
+  .footer
+    &-wrapper
+      grid-template-columns: 98px 53px 274px 36px
+    &__input
+      flex-basis: 100%
+    &__condition
+      grid-column-start: span 4
+      &-cards
+        margin-left: auto
 @media screen and  (max-width: 576px)
   // .container
   //   min-width: 92%
@@ -233,14 +284,11 @@
 
   .subscribe
     width: 95%
-<<<<<<< HEAD
     &__button
       font-size: 12px
       line-height: 15px
     &__input
       padding-left: 21px
-=======
->>>>>>> 3bfb70c927b8d787d9f1ac6bc89a877cf9be3ce9
   .newsletter
     &-title
       font-size: 20px
@@ -256,11 +304,7 @@
       font-size: 18px
       line-height: 23px
       max-width: 84%
-<<<<<<< HEAD
       margin: 27px auto 36px
-=======
-      margin: 30px auto 44px
->>>>>>> 3bfb70c927b8d787d9f1ac6bc89a877cf9be3ce9
     &-slider
       &__item
         padding: 0px 39px 30px 42px
@@ -269,7 +313,6 @@
           right: 43%
         &--prev
           left: 44%
-<<<<<<< HEAD
       &__text
         max-height: 266px
         text-align: left
@@ -282,9 +325,44 @@
       font-size: 18px
       line-height: 23px
       margin-bottom: 37px
-=======
-
->>>>>>> 3bfb70c927b8d787d9f1ac6bc89a877cf9be3ce9
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-column: 1
+      grid-row: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 4
+      grid-column: 1
+      margin-left: 0
+    &__categories
+      grid-row: 5
+      grid-column: 1
+    &__legal
+      display: block
+      grid-row: 3
+      grid-column: 1
+      &-wrapper
+        width: 100%
+    &__contact
+      &-detalies
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+    &__message
+      padding: 18px 5px
+    &__condition
+      display: flex
+      flex-wrap: wrap
+      justify-content: flex-start
+      &-cards
+        margin: 10px 0 0 0
 @media screen and  (max-width: 320px)
   .hotel
     &-grid
@@ -314,3 +392,63 @@
   .activities
     width: 93%
     margin: auto
+  .footer
+    padding-left: 12px
+    padding-right: 7px
+    &-wrapper
+      grid-row-gap: 32px
+    &__logo
+      width: 95px
+      height: 98px
+    &__social
+      margin-top: 0
+      &-network
+        display: flex
+        flex-wrap: wrap
+        flex-basis: 100%
+        margin-top: 13px
+    &__title
+      margin-top: 0
+      margin-bottom: 19px
+    &__icon
+      &-wrapper
+        text-align: left
+        min-width: 31px
+    &__text
+      margin-bottom: 30px
+      &--inline
+        margin: 0 0px 18px 0
+        flex-basis: 100%
+    &__contact
+      &-detalies
+        margin-bottom: 10px
+    &__ul
+      &--mb-12
+        margin-bottom: 12px
+    &__additional
+      margin: 0
+    &__input
+      font-size: 12px
+      line-height: 15px
+      height: 48px
+      flex-basis: 100%
+    &__message
+      padding: 15px 0px
+      margin-bottom: 16px
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      height: 125px
+      padding-top: 1px
+      padding-left: 1px
+      padding-top: 19px
+      padding-left: 21px
+    &__button
+      order: 2
+    &__info
+      flex-basis: 100%
+      margin-bottom: 13px
+    &__condition
+      margin-top: -5px
+      &-link
+        margin-left: 0
