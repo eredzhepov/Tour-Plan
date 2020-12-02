@@ -14,16 +14,16 @@
 </head>
 <body>
 
-  <header class="navbar">
+  <header class="navbar navbar--mobile_fixed">
     <div class="container">
 
       <div class="navbar-top">
 
-        <a href="#" class="logo">
+        <a href="https://enver-eredzhepov.ru/tour-plan/" class="logo">
           <img src="img/logo.svg" alt="Логотип: Best Tour Plan" class="logo__image">
         </a>
 
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile_hidden">
           <input class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Иконка: Поиск">
@@ -31,8 +31,8 @@
         </form>   
 
 
-        <a href="#" class="user navbar__user">
-          <img src="img/user-avatar.jpg" alt="Аватарка - Натан" class="user__avatar">
+        <a href="#" class="user navbar__user navbar__user--mobile_hidden">
+          <img src="img/user-avatar.jpg" alt="Аватарка - Натан" class="user__avatar ">
           <span class="user__name">Nathan</span>
         </a>
         <button class="menu-button navbar-top__menu-button">
@@ -51,14 +51,28 @@
 
     <div class="navbar-bottom">
       <div class="container">
-        <ul class="navbar-menu">
-          <li class="navbar-menu__ikon"><a href="#" class="navbar-menu__link">All Deals</a></li>
-          <li class="navbar-menu__ikon"><a href="#" class="navbar-menu__link">Hotels</a></li>
-          <li class="navbar-menu__ikon"><a href="#" class="navbar-menu__link">Activities</a></li>
-          <li class="navbar-menu__ikon"><a href="#" class="navbar-menu__link">Hotel Day Packages</a></li>
-          <li class="navbar-menu__ikon"><a href="#" class="navbar-menu__link">Restaurants</a></li>
-          <li class="navbar-menu__ikon"><a href="#" class="navbar-menu__link">Events</a></li>
-          <li class="navbar-menu__ikon"><a href="#" class="navbar-menu__link">Rodrigues</a></li>
+        <ul class="navbar-menu navbar-menu__mobile">
+          <li class="navbar-menu__ikon navbar-menu__ikon--mobile_visible navbar-menu__ikon--mobile_visible--mb--1">
+            <a href="#" class="user navbar__user navbar__user--mobile_visible">
+              <img src="img/user-avatar.jpg" alt="Аватарка - Натан" class="user__avatar ">
+              <span class="user__name user__name--light">Nathan</span>
+            </a>
+          </li>
+          <li class="navbar-menu__ikon navbar-menu__ikon--mobile_visible">
+            <form action="#" class="search navbar__search navbar__search--mobile_visible">
+              <input class="search__input search__input--mobile" placeholder="Search Location">
+              <button class="search__button">
+                <img src="img/search.svg" alt="Иконка: Поиск">
+              </button>
+            </form>
+          </li>
+          <li class="navbar-menu__ikon navbar-menu__ikon--mb--2"><a href="#" class="navbar-menu__link">All Deals</a></li>
+          <li class="navbar-menu__ikon navbar-menu__ikon--mb--3"><a href="#" class="navbar-menu__link">Hotels</a></li>
+          <li class="navbar-menu__ikon navbar-menu__ikon--mb--2"><a href="#" class="navbar-menu__link">Activities</a></li>
+          <li class="navbar-menu__ikon navbar-menu__ikon--mb--2"><a href="#" class="navbar-menu__link">Hotel Day Packages</a></li>
+          <li class="navbar-menu__ikon navbar-menu__ikon--mb--2"><a href="#" class="navbar-menu__link">Restaurants</a></li>
+          <li class="navbar-menu__ikon navbar-menu__ikon--mb--3"><a href="#" class="navbar-menu__link">Events</a></li>
+          <li class="navbar-menu__ikon navbar-menu__ikon--mb--2"><a href="#" class="navbar-menu__link">Rodrigues</a></li>
         </ul>
         <!-- navbar-menu -->
       </div>
@@ -346,7 +360,7 @@ quest" class="card__image">
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-         <img src="img/vertical-logo.svg" alt="Vertical logo" class="footer__logo">
+         <a href="https://enver-eredzhepov.ru/tour-plan/" class="footer__logo"><img src="img/vertical-logo.svg" alt="Vertical logo" class="footer__logo"></a>
          <div class="footer__list footer__categories">
            <h3 class="footer__title">ALL CATEGORIES</h3>
            <ul class="footer__ul footer__ul--mb-12">
@@ -424,24 +438,28 @@ quest" class="card__image">
           <ul class="footer__ul">
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
-                <img src="img/footer-map.svg" alt="Icon: Map" class="footer__icon">
+                <img src="img/footer-map.svg" alt="Icon: Map" class="footer__icon footer__icon-map">
               </div>
               9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
-              <img src="img/footer-phone-call.svg" alt="Icon: phone-call" class="footer__icon">
+              <img src="img/footer-phone-call.svg" alt="Icon: phone-call" class="footer__icon footer__icon-phone">
               </div>
-            Tel (business hours) : 269 1500 <br />
-            Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br />
-            Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm) <br /> 
-
+                <ul class="footer__ul">
+                  <li class="footer__phone-numbers"><a href="tel:269 1500" class="footer__phone-link"> Tel (business hours) : 269 1500 </a><br /></li>
+                  <li class="footer__phone-numbers"><a href="tel:56 61 38" class="footer__phone-link">Tel (hotline) Monday - Saturday: 52&#8209;56&#8209;61&#8209;38 (08:00 am – 20:00 pm)</a> <br /></li>
+                  <li class="footer__phone-numbers"><a href="tel:52‑56‑61‑38" class="footer__phone-link">Tel (hotline) Sunday: 52&#8209;56&#8209;61&#8209;38 (08:00 am – 14:00 pm)</a> <br /></li>
+                   
+                    
+                    
+                </ul>
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
-              <img src="img/footer-mail.svg" alt="Icon: Mail" class="footer__icon">
+              <img src="img/footer-mail.svg" alt="Icon: Mail" class="footer__icon footer__icon-mail">
               </div>
-              cherly.lawson@example.com
+              <a href="mailto:cherly.lawson@example.com" class="footer__phone-link"> cherly.lawson@example.com</a>
             </li>
           </ul>
         </div>
@@ -473,7 +491,8 @@ quest" class="card__image">
     </div>
     <!-- /.container -->
   </footer>
-  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  
 </body>
 </html>
