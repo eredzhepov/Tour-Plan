@@ -15,6 +15,15 @@
   .footer
     &__input
       flex-basis: 100%
+    &__icon
+      &-map
+        margin-left: 0
+        margin-top: 3px
+      &-phone
+        margin-left: 0
+      &-mail
+        margin-left: 0
+        margin-top: 6px
 @media screen and  (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -25,7 +34,8 @@
       padding-top: 30px
       padding-bottom: 30px
     &__search
-      margin-left: auto
+      margin-left: 49px
+
   .navbar-menu
     padding: 23px 14px
     &__link
@@ -62,6 +72,8 @@
     padding: 70px 0 68px 0
   .reviews
     &-slider
+      &__text
+        max-height: 130px
       &__item
         max-width: 580px
         padding: 0 65px 34px 67px
@@ -70,7 +82,7 @@
       &__username
         margin-bottom: 8px
       &__button
-        top: 49%
+        top: 50%
         &--next
           right: 2px
         &--prev
@@ -81,7 +93,7 @@
       margin-top: 33px
       margin-bottom: 45px
   .activities
-    padding: 63px 0 48px 0
+    padding: 50px 0 48px 0
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -109,22 +121,24 @@
         margin-top: -8px
       &--mb-4
         margin-top: 19px
-        margin-bottom: 26px
+        margin-bottom: 22px
     &__input
       flex-basis: 47%
     &__logo
       grid-row: 1 / 2
-      width: 104px
-      height: 112px
+      width: 97px
+      height: 108px
     &__icon
       &-wrapper
         text-align: center
+        min-width: 34px
+        margin-right: 10px
     &__social
       &-network
         grid-row: 1 / 2
         grid-column-start: 3
         align-self: center
-        margin-top: 10px
+        margin-top: 7px
     &__additional
       grid-column-start: 3
       justify-content: center
@@ -134,6 +148,10 @@
       grid-column: span 2
     &__legal
       grid-column: span 2
+      &-wrapper
+        width: 200px
+    &__text
+      margin-bottom: 28px
     &__contact
       &-detalies
         grid-row: 3
@@ -146,19 +164,68 @@
       grid-column-start: span 5
       &-cards
         margin-left: auto
+  .modal
+    &__dialog
+      padding: 20px 45px
+      max-width: 392px
 @media screen and  (max-width: 767px)
   .container
     width: 92%
-
+  body
+    padding-top: 78px
   .logo
     width: 99px
     margin-left: 10px
   .navbar
+    &--mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &-menu
+      flex-direction: column
+      &__mobile
+        padding: 0
+      &__ikon
+        margin-bottom: 37px
+        &--mb
+          &--2
+            margin-bottom: 18px
+          &--3
+            margin-bottom: 15px
+        &--mobile
+          &_visible
+            display: block
+            &--mb
+              &--1
+                margin-bottom: 26px
+
+    &__user
+      flex-direction: column
+      justify-content: center
     &-top
       padding: 29px 0px
 
-    &__search, &-menu, &__user
+    &__search, &__user
+      &--mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 75px
+      padding-top: 32px
+      &--visible
+        display: block
+        overflow-y: auto
+
   .menu
     &-button
       display: flex
@@ -174,12 +241,21 @@
         width: 16px
         height: 1px
         background-color: $text-color
+        z-index: 100
+  .user
+    &__name
+      &--light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
   .stars
     flex-basis: auto
 
   .hotel
     padding-top: 0
     margin: auto
+    &-wraper
+      justify-content: space-between
     &-info
       &__rating
         display: none
@@ -231,13 +307,48 @@
     height: 255px
   .footer
     &-wrapper
-      grid-template-columns: 98px 53px 274px 36px
+
+      grid-template-columns: 105px 71px 283px 157px
+      // grid-template-columns: 105px 82px 314px 40px
+
+    &__title
+      font-size: 15px
+      line-height: 18px
+    &__legal
+      grid-column: span 1
     &__input
       flex-basis: 100%
     &__condition
       grid-column-start: span 4
+    &__additional
+      margin-left: 0
       &-cards
         margin-left: auto
+  .modal
+    &__dialog
+      padding: 17px 25px 17px 25px
+      max-width: 340px
+    &__button
+      padding: 14px
+
+@media screen and  (max-width: 660px)
+  .footer
+    &-wrapper
+      grid-template-columns: 100px 49px 227px 157px
+  .modal
+    &__dialog
+    &__button
+      width: 100%
+      margin-bottom: 10px
+    &__message
+      min-height: 100px
+      font-size: 10px
+      line-height: 13px
+    &__input
+      padding: 0px 18px
+      height: 40px
+      font-size: 10px
+      line-height: 13px
 @media screen and  (max-width: 576px)
   // .container
   //   min-width: 92%
@@ -361,23 +472,33 @@
       display: flex
       flex-wrap: wrap
       justify-content: flex-start
+      &-item
+        width: 100%
       &-cards
         margin: 10px 0 0 0
+  .modal
+    &__dialog
+      padding: 17px 15px 17px 15px
 @media screen and  (max-width: 320px)
+  .navbar
+    &__search
+      margin-left: 0
   .hotel
     &-grid
       width: 278px
     &-right
       min-height: 403px
+    &-slider
+      &__button
+        &--next
+          right: 0px
+          background-size: 5px
+        &--prev
+          left: 0px
+          background-size: 5px
   .hotel__slider
     height: 179px
-    &-button
-      &--next
-        right: 0px
-        background-size: 5px
-      &--prev
-        left: 0px
-        background-size: 5px
+
   .breadcrumb-list
     margin-left: 10px
   .map
@@ -396,10 +517,11 @@
     padding-left: 12px
     padding-right: 7px
     &-wrapper
-      grid-row-gap: 32px
+      grid-row-gap: 30px
+
     &__logo
       width: 95px
-      height: 98px
+      height: 102px
     &__social
       margin-top: 0
       &-network
@@ -410,10 +532,14 @@
     &__title
       margin-top: 0
       margin-bottom: 19px
+      font-size: 18px
+      line-height: 24px
+      flex-basis: 100%
     &__icon
       &-wrapper
         text-align: left
         min-width: 31px
+        margin-right: 0px
     &__text
       margin-bottom: 30px
       &--inline
@@ -449,6 +575,15 @@
       flex-basis: 100%
       margin-bottom: 13px
     &__condition
-      margin-top: -5px
+      margin-top: -7px
+
       &-link
         margin-left: 0
+        margin-right: 3px
+  .modal
+    &__dialog
+      min-width: 232px
+    &__input
+      height: 28px
+    &__button
+      padding: 10px
