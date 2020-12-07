@@ -61,5 +61,42 @@ $(document).keydown(function(event) {
     closeModal(event);
   }
 });
+// обработка форм
+$(".form").each(function(){
+  $(this).validate({
+  errorClass: "invalid",
+  messages: {
+    
+    name: {
+      required: "Please specify your name",
+      minlength: "Name must be more than two characters"
+    },
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+    },
+    // email_sub: {
+    //   required: "We need your email address to contact you",
+    //   email: "Your email address must be in the format of name@domain.com",
+    // },
+    phone: {
+      required: "Enter your phone please!",
+    },
+} 
+}); 
 
+})
+$(".subscribe__form").validate({
+  errorClass: "invalid__sub",
+  messages: {
+    email_sub: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+    },
+  }
+}); 
+
+$(".phone").each(function() {
+$(this).mask('+7(999) 000-00-00');
+});
 });

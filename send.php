@@ -7,19 +7,35 @@ require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
-$email = $_POST['email'];
 $message = $_POST['message'];
+$email = $_POST['email'];
+$email_sub = $_POST['email_sub'];
 
-
+  
 // Формирование самого письма
 $title = "New message Best Tour Plan";
 $body = "
 <h2>New message</h2>
 <b>Name:</b> $name<br>
 <b>Phone:</b> $phone<br><br>
-<b>Email:</b> $email<br><br>
 <b>Message:</b><br>$message
 ";
+if ($name and $phone and $message and $email ) {
+  $title = "New message  Best Tour Plan";
+  $body = "
+    <h2>New message</h2>
+<b>Name:</b> $name<br>
+<b>Phone:</b> $phone<br><br>
+<b>Phone:</b> $email<br><br>
+<b>Message:</b><br>$message
+  ";
+} elseif ($email_sub) {
+  $title = "Subscrib on Best Tour Plan";
+  $body = "
+    <h2>New subscriber</h2>
+    <b>mail:</b> $email_sub<br>
+  ";
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
