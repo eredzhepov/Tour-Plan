@@ -11,13 +11,14 @@
   <title>Best Tour Plan - Hotel Booking</title>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/aos.css">
 </head>
 <body>
 
   <header class="navbar navbar--mobile_fixed">
     <div class="container">
 
-      <div class="navbar-top">
+      <div class="navbar-top" >
 
         <a href="https://enver-eredzhepov.ru/tour-plan/" class="logo">
           <img src="img/logo.svg" alt="Логотип: Best Tour Plan" class="logo__image">
@@ -116,7 +117,7 @@
             </p>
         </div>
         <!-- /.hottext -->
-        <div class="rating hotel-info__rating">
+        <div class="rating hotel-info__rating" data-aos="flip-right">
           <span class="rating-text">User Rattings</span>
           <strong class="reting-counter">4.5/</strong><span class="reting-counter little">5</span>
         </div>
@@ -153,7 +154,7 @@
 
           </div>
           <!-- swiper-container -->
-       <div class="hotel-right hotel-right__wraper">
+       <div class="hotel-right hotel-right__wraper" >
           <div class="booking">
             <div class="booking__info">
               <div class="booking__price">
@@ -206,7 +207,7 @@
     <div class="container">
       <h2 class="packeges-title packeges__title">Other Packages</h2>
       <div class="packeges-cards">
-        <div class="packeges-card packeges__card1">
+        <div class="packeges-card packeges__card1" data-aos="flip-left" data-aos-offset="100">
           <div class="packeges-card__parts1">
             <button class="packeges__button__offer">Flash Offer</button>
           </div>
@@ -245,7 +246,7 @@
             </div>
           </div>
         </div>
-        <div class="packeges-card packeges__card2 card2">
+        <div class="packeges-card packeges__card2 card2" data-aos="flip-left" data-aos-offset="150">
           <div class="card2-image">
             <button class="card2-button">Flash Offer</button>
           </div>
@@ -272,7 +273,7 @@
         </div>
         <!-- card2 -->
   
-        <div class="packeges-card packeges__card3 card3">
+        <div class="packeges-card packeges__card3 card3" data-aos="flip-left" data-aos-offset="100">
           <div class="card3-image">
             <button class="card3-button">Flash Offer</button>
           </div>
@@ -298,7 +299,7 @@
   
         </div>
         <!-- card3 -->
-        <div class="packeges-card packeges__card4 card4">
+        <div class="packeges-card packeges__card4 card4" data-aos="flip-left" data-aos-offset="150">
           <div class="card4-image">
             <button class="card4-button">Flash Offer</button>
           </div>
@@ -323,7 +324,7 @@
           </div>
   
         </div>
-        <div class="packeges-card packeges__card5 card5">
+        <div class="packeges-card packeges__card5 card5" data-aos="flip-left" data-aos-offset="200">
           <div class="card5-image">
             <button class="card5-button">Flash Offer</button>
           </div>
@@ -474,7 +475,8 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up"
+     data-aos-delay="100">
           <img src="img/activities-1.jpg" alt="The curious corner 
 of chamarel" class="card__image">
           <h3 class="card__title card__title--first">The curious corner
@@ -482,7 +484,8 @@ of chamarel" class="card__image">
           <button data-togle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up"
+     data-aos-delay="200">
           <img src="img/activities-2.jpg" alt="Gymkhana club golf
 course" class="card__image">
           <h3 class="card__title card__title--first">Gymkhana club golf
@@ -490,7 +493,8 @@ course" class="card__image">
           <button data-togle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up"
+     data-aos-delay="300">
           <img src="img/activities-3.jpg" alt="Tamarind falls hiking
 trip - full day" class="card__image">
           <h3 class="card__title card__title--second">Tamarind falls hiking
@@ -498,7 +502,8 @@ trip - full day" class="card__image">
           <button data-togle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up"
+     data-aos-delay="400">
           <img src="img/activities-4.jpg" alt="The blue marine discovery
 quest" class="card__image">
           <h3 class="card__title card__title--third">The blue marine discovery
@@ -626,7 +631,7 @@ quest" class="card__image">
               <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2">
             </div>
             <div class="footer__input-group">
-              <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" required>
+              <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" required minlength="17">
             </div>
             <textarea  cols="30" rows="6" class="message footer__message" placeholder="Message" name="message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
@@ -661,8 +666,8 @@ quest" class="card__image">
       <h3 class="modal__title">Booking</h3>
       <form action="send.php" method="POST" class="modal__form form">
         <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-        <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" required>
-        <input type="email" class="input modal__input" placeholder="Email**" name="email" required>
+        <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" required minlength="17">
+        <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
         <textarea  class="message modal__message" placeholder="Message" name="message"></textarea>
         <button class="button modal__button" type="submit">Send</button>
         <span class="modal__info">* Required Fields</span>
@@ -675,6 +680,7 @@ quest" class="card__image">
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
   <!-- <script src="js/swiper-bundle.min.js"></script> -->
   

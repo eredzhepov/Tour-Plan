@@ -350,9 +350,7 @@ template {
 body {
   font-family: 'Mulish', sans-serif;
   background-color: #F5FAFE;
-  -webkit-columns: #333333;
-     -moz-columns: #333333;
-          columns: #333333;
+  color: #333333;
 }
 
 button {
@@ -390,6 +388,7 @@ input {
   color: #EC1F46;
   font-size: 13px;
   line-height: 15px;
+  margin-top: 5px;
 }
 
 .invalid__sub {
@@ -1054,23 +1053,23 @@ input {
 }
 
 .subscribe__input::-webkit-input-placeholder {
-  color: #333333;
+  color: #BDBDBD;
 }
 
 .subscribe__input::-moz-placeholder {
-  color: #333333;
+  color: #BDBDBD;
 }
 
 .subscribe__input:-ms-input-placeholder {
-  color: #333333;
+  color: #BDBDBD;
 }
 
 .subscribe__input::-ms-input-placeholder {
-  color: #333333;
+  color: #BDBDBD;
 }
 
 .subscribe__input::placeholder {
-  color: #333333;
+  color: #BDBDBD;
 }
 
 .subscribe__button {
@@ -1555,6 +1554,26 @@ input {
   line-height: 15px;
 }
 
+.footer__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__input::-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__input::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__input::placeholder {
+  color: #BDBDBD;
+}
+
 .footer__input-group {
   margin-bottom: 15px;
   -webkit-flex-basis: 48%;
@@ -1569,6 +1588,26 @@ input {
   margin-bottom: 19px;
   font-size: 12px;
   line-height: 15px;
+}
+
+.footer__message::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__message::-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__message:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__message::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__message::placeholder {
+  color: #BDBDBD;
 }
 
 .footer__button {
@@ -1691,6 +1730,26 @@ input {
   line-height: 15px;
 }
 
+.modal__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__input::-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__input::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__input::placeholder {
+  color: #BDBDBD;
+}
+
 .modal__message {
   width: 100%;
   min-height: 123px;
@@ -1698,6 +1757,26 @@ input {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+}
+
+.modal__message::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__message::-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__message:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__message::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__message::placeholder {
+  color: #BDBDBD;
 }
 
 .modal__button {
@@ -1720,6 +1799,7 @@ input {
   font-weight: bold;
   font-size: 11px;
   line-height: 15px;
+  margin-top: 15px;
 }
 
 .modal__title {

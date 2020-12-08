@@ -81,6 +81,7 @@ $(".form").each(function(){
     // },
     phone: {
       required: "Enter your phone please!",
+      minlength: "Enter the full number"
     },
 } 
 }); 
@@ -98,5 +99,9 @@ $(".subscribe__form").validate({
 
 $(".phone").each(function() {
 $(this).mask('+7(999) 000-00-00');
+
 });
+
+AOS.init();
+
 });
